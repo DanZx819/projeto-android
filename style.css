@@ -1,0 +1,226 @@
+@charset "UTF-8";
+@font-face{
+    font-family: 'Android' ;
+    src: url('Arquivos/pacote-projeto-d010/fontes/idroid.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face{
+    font-family: 'Bebas' ;
+    src: url('Arquivos/pacote-projeto-d010/fontes/BebasNeue-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+/*
+    #84E1AD 
+    #3AD07C
+    #1A6038
+    #1A5C38
+*/
+
+
+
+
+
+:root{
+    --font-destaque: Bebas, sans-serif;
+}
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+p{
+    line-height: 1.5em;
+    margin: 15px 0px;
+}
+body{
+    background-color: #84E1AD;
+}
+header{
+    min-height: 150px;
+    background-image: linear-gradient(to bottom, #67e19c,#1A5C38);
+}
+header >h1,p{
+    text-align: center;
+    font-family: Bebas, sans-serif;
+    color: white;
+}
+header p {
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.462);
+    font-size: 1.2em;
+    max-width: 500px;
+    margin: auto;
+
+}
+header > h1{
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.462);
+    font-size: 3em;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    
+}
+
+nav{
+    box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.426);
+    text-align: left;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+header > nav > a{
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    font-weight: bold;
+    margin: auto;
+    border-radius: 5px;
+    transition-duration: 0.5s ;
+}
+
+a:hover{
+    background-color: #84E1AD;
+}
+article > p{
+    text-indent: 50px;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+    margin: 15px 0px;
+}
+
+article > h1#Android-title{
+    font-family: Android, sans-serif;
+    color: #1A6038;
+}
+
+
+article > h2{
+    background-image: linear-gradient(to right, #84E1AD, white 30% );
+    font-family: Android, sans-serif;
+    color: #1A5C38;
+}
+
+main{
+    max-width: 1000px;
+    min-width: 300px;
+    margin: auto;
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: white ;
+    box-shadow: 4px 8px 20px 0px rgba(0, 0, 0, 0.419);
+    border-bottom-left-radius: 10px ;
+    border-bottom-right-radius: 10px ;
+}
+main img{
+    width: 100%;
+}
+span#palavras{
+    color: #1A6038;
+}
+article a{
+    color: #1A5C38;
+    background-color: #51fb9b;
+    text-decoration: none;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+a.externo::after{
+    content: "\1F517";
+}
+a:hover{
+    background-color: #67e19c;
+    transition-duration: 0.5s;
+}
+article > img,picture{
+    width: 100%;
+}
+picture{
+    width: 100%;
+}
+article > img{
+    width: 50%;
+    display: block;
+    margin: auto;
+}
+
+div#video{
+    max-height: 800px;
+    min-height: 320px;
+    max-width: 1000px;
+    min-width: 320px;
+    background-color: #1A5C38;
+}
+aside a{
+    color: #1A5C38;
+    background-color: #51fb9b;
+    text-decoration: none;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+aside{
+    background-color: #67e19c55;
+    border-radius: 10px;
+    list-style-type: "\1F5F8""\00A0";
+    box-shadow: 2px 7px 8px 1px rgba(0, 0, 0, 0.42);
+}
+aside  h3{
+    background-color: #62f6a2;
+    padding: 10px;
+    border-radius: 10px 10px 0px 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+aside p{
+    text-align: justify;
+    text-indent: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    margin: auto;
+    font-weight: bold;
+    margin: 15px 0px;
+    padding-left: 10px ;
+    padding-right: 10px;
+   
+}
+aside ul{
+    list-style-position: inside;
+    columns: 2;
+    padding: 10px;
+    list-style-type: "\1F5F8\00A0\00A0";
+}
+
+footer{
+    background-color: #1A5C38;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+footer > p{
+    margin: 0px;
+    
+}
+footer a{
+    text-decoration: none;
+    color: #51fb9b;
+}
+
+footer a:hover{
+    background-color: #ffffff;
+}
+
+div.video{
+    background-color: #1A5C38;
+    
+    margin: 0px -20px 30px -20px;
+    padding: 20px;
+    padding-bottom: 59%;
+    position: relative;
+}
+
+div.video > iframe{
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
